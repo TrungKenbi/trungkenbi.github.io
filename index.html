@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>About Me - TrungKenbi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="sheet/bootstrap.css">
+	<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="sheet/mine.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+	<div class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3 class="py-3">About <span>Me</span></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="margin-top: 116px;">
+		<div class="row">
+			<div class="col-11 mx-auto profile">
+				<div class="py-3 px-2 px-lg-4 py-lg-5">
+
+					<div class="row">
+						<div class="avatarBox col-12 col-lg-5">
+						    <a href="https://www.facebook.com/I.Am.TrungKenbi">
+							    <img src="https://graph.facebook.com/624185436/picture?type=large" class="img-fluid">
+							</a>
+						</div>
+
+						<div class="infoBox col-12 col-lg-6 mt-2 mt-lg-0">
+							<p class="sayHi">Hello !</p>
+
+							<div class="name">
+								<p><span>My name is</span> Trung</p>
+								<p class="s">Verify handsome !
+									<span class="ion-ios-checkmark-outline"></span>
+								</p>
+								<p><span class="ion-android-globe"></span> Student of Thu Dau Mot University </p>
+							</div>
+							<hr>
+
+							<div class="detailInfo">
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Full name</div>
+									<div class="col-lg-8 col-12 b">Duong Le Phuoc Trung</div>
+								</div>
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Nick name</div>
+									<div class="col-lg-8 col-12 b">TrungKenbi</div>
+								</div>
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Department</div>
+									<div class="col-lg-8 col-12 b">Information Technology</div>
+								</div>
+								<div class="row my-2">
+									<div class="col-lg-4 col-12 boldd">Work</div>
+									<div class="col-lg-8 col-12 b">Freelancer :v</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-4 col-12 boldd">Age</div>
+									<div class="col-lg-8 col-12 b"><span id="age"></span></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-11 mx-auto bg-danger contact text-center">
+				<div class="social col-12">
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/I.Am.TrungKenbi" target="_blank" title="Link profile Facebook me">
+						<span class="ion ion-logo-facebook mr-4 mr-lg-5"></span>
+					</a>
+					
+					
+					<a href="/convert" target="_blank" title="Tool convert phone 11 digit to 10 digit">
+						<span class="ion ion-md-hammer mr-4 mr-lg-5"></span>
+					</a>
+					
+					<a href="/skin/MODSKIN.zip" target="_blank" onclick="return confirm('Do you want to download MOD SKIN League of Legends free, high speed ?')">
+						<span class="ion-md-download mr-4 mr-lg-5"></span>
+					</a>
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<div class="text-center">
+	    Code by <font color="red"><i class="icon ion-md-heart"></i></font> Me
+	</div>
+	<script>
+	function getAge(dateString) {
+		var today = new Date();
+		var birthDate = new Date(dateString);
+		var age = today.getFullYear() - birthDate.getFullYear();
+		var m = today.getMonth() - birthDate.getMonth();
+		if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+			age--;
+		}
+		return age;
+	}
+	document.getElementById("age").innerHTML = getAge("2000/06/17");
+	</script>
+</body>
+</html>
